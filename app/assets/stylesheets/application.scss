@@ -1,0 +1,85 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import "bootstrap";
+@import "entypo";
+
+.box {
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+	line-height: 1.4em;
+	float: left;
+	box-shadow: 1px 1px 10px #444;
+	width: 200px;
+	background: white;
+	height: 290px;	
+	z-index: 4;
+}
+
+.box img {
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 290px;
+}
+
+.box-content {
+	transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	position: relative;
+	background: black;
+	color: white;
+	padding: 14px;
+	opacity: 0;
+}
+
+.box-content:hover {
+	transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	opacity: 0.8;
+}
+
+.navbar {
+	position:fixed;
+	width: 100%;
+	z-index: 10;
+	top: 0;
+}
+
+.navbar .btn {
+	color: white;
+	font-weight: bold;
+}
+
+.review {
+	margin-top: 6%;
+}
+
+a.icon-eye, a.icon-pencil, a.icon-cross {
+	font-size: 42px;
+}
+
+a.icon-eye:hover, a.icon-pencil:hover, a.icon-cross:hover {
+text-decoration: none;
+}
+
+.form_search {
+margin-top: 5px;
+margin-bottom: 0px;
+}

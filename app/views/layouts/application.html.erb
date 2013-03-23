@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookface</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navbar">
+    	<div class="navbar-inner">
+    		<a class="brand" href="/books">Bookface</a>
+    		<ul class="nav">
+    		<li class="active"><a href="/books">Home</a></li>
+    		<div class="newbook"><%= link_to "+ Add Book", new_book_path, :class => "btn btn-small btn-primary" %></div>
+    		<li><a href="#">Link</a></li>
+    		</ul>
+    		<%= form_tag books_path, :class => "form_search", :remote => true, :method => :get do %>
+          <%= text_field_tag :search, params[:search], :class => "search-query", :id =>"book_search" %>
+          <% end %>
+    		</form>
+    	</div>
+    </div>
+
+<%= yield %>
+
+</body>
+</html>

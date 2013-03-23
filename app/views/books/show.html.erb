@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<div class="review">
+<div class="span6">
+	<div class="cover">
+		<%= image_tag @book.image_url.to_s %>
+	</div>
+</div>
+
+<div class="span3">
+	<div class="book-info">
+	<p>
+	  <b>Title:</b>
+	  <%= @book.title %>
+	</p>
+
+	<p>
+	  <b>Author:</b>
+	  <%= @book.author %>
+	</p>
+
+	<p>
+	  <b>Review:</b>
+	  <%= @book.review %>
+	</p>
+	<p>
+	  <b>Tags:</b>
+	  <% @book.tags.any? %>
+	  <% @book.tags.each do |tag| %>
+	  <%= link_to tag.name, tagged_url(:tag => tag.name) %>
+	  <% end %>
+	</p>
+	</br>
+	<%= link_to 'Edit', edit_book_path(@book) %> |
+	<%= link_to 'Back', books_path %>
+	</div>
+</div>
+</div>
+

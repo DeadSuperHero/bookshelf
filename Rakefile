@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Bookface::Application.load_tasks
+Bookshelf::Application.load_tasks

@@ -1,8 +1,7 @@
-Bookface::Application.routes.draw do
+Bookshelf::Application.routes.draw do
   resources :books
-root :to => 'books#index'
-
-match 'tagged' => 'books#tagged', :as => 'tagged'
+  root :to => 'books#index'
+  match 'tagged' => 'books#tagged', :as => 'tagged'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

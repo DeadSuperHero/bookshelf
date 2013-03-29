@@ -28,6 +28,7 @@ gem 'entypo-rails'
 gem 'rmagick'
 gem 'sunspot_rails'
 gem 'puma'
+gem 'openlibrary'
 
 group :development do
     gem 'sunspot_solr'

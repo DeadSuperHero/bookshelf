@@ -27,6 +27,7 @@ gem 'carrierwave'
 gem 'entypo-rails'
 gem 'rmagick'
 gem 'sunspot_rails'
+gem 'puma'
 
 group :development do
     gem 'sunspot_solr'

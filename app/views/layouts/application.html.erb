@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bookface</title>
+  <title>Bookshelf</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -12,7 +12,7 @@
     		<%= link_to "Bookshelf", root_path, :class => "brand" %>
     		<ul class="nav">
     		<li class="active"><a href="/books">Home</a></li>
-    		<div class="newbook"><%= link_to "+ Add Book", new_book_path, :class => "btn btn-small btn-primary" %></div>
+    		<div class="newbook"><%= link_to "Add Book", new_book_path, :class => "btn btn-small btn-primary" %></div>
     		<li><a href="#">Link</a></li>
     		</ul>
     		<%= form_tag books_path, :class => "form_search", :method => :get do %>

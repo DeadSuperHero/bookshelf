@@ -29,7 +29,7 @@ gem 'puma'
 
 group :development do
     gem 'sunspot_solr'
-    gem 'pg'
+    gem 'activerecord-postgresql-adapter'
   end
 
 

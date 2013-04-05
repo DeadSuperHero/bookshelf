@@ -24,16 +24,13 @@ gem 'acts-as-taggable-on', '~> 2.3.1'
 gem 'carrierwave'
 gem 'entypo-rails'
 gem 'rmagick'
-gem 'sunspot_rails'
 gem 'puma'
 
 group :development do
-    gem 'sunspot_solr'
     gem 'activerecord-postgresql-adapter'
   end
 
 group :production do
-	gem 'sunspot_solr'
     gem 'activerecord-postgresql-adapter'
 end
 
